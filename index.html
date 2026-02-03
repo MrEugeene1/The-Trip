@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    The 'defer' attribute in the <script> tag indicates that the script should be executed after the HTML document has been completely parsed.
+
+    Key behaviors of defer:
+    - The script is downloaded in parallel with HTML parsing (non-blocking)
+    - Script execution is deferred until the DOM is fully constructed
+    - Scripts with defer are executed in the order they appear in the document
+    - The DOMContentLoaded event fires after all deferred scripts have executed
+
+    Benefits:
+    - Improves page load performance by not blocking HTML parsing
+    - Ensures the script can safely access DOM elements without waiting for window.onload
+    - Maintains script execution order when multiple scripts are present
+
+    Common use case: External scripts that need to manipulate DOM elements
+    -->
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Trip</title>
+
+</head>
+
+<body>
+    <header>
+    <h1>Journeys of Friendship: Exploring the World Together</h1>
+    <p>Welcome to a collection of unforgettable moments where laughter echoes louder, discoveries feel more profound, and every sunset shared becomes a memory etched in time. Journey with us as we uncover hidden gems, embrace spontaneous detours, and prove that the best adventures are those experienced side by side with the people who matter most.</p>
+</header>
+<nav>
+        <ul>
+            <li><a href="">Home Page</a></li>
+            <li><select name="cities" id="cities">
+                <option value="Paris">Paris</option>
+                <option value="Lille" selected>Lille</option>
+                <option value="Marseille">Marseille</option>
+                </select>   
+            <a href="">Cities</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Subscribe Pages</a></li>
+        </ul>
+    </nav>
+
+<!-- Slideshow Section -->
+<section class="slideshow-container">
+    <div class="slideshow-wrapper">
+        <!-- Paris Images -->
+        <figure class="slide fade">
+            <img src="Assets/Paris_1.jfif" alt="Paris">
+            <figcaption>Paris - The City of Light awaits with its timeless charm</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Paris_2.jfif" alt="Paris">
+            <figcaption>Paris - Exploring iconic landmarks and hidden cafés</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Paris_3.jfif" alt="Paris">
+            <figcaption>Paris - Romance and culture at every corner</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Paris_4.jfif" alt="Paris">
+            <figcaption>Paris - Where history meets modern elegance</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Paris_5.jfif" alt="Paris">
+            <figcaption>Paris - Memories made under the Parisian sky</figcaption>
+        </figure>
+
+        <!-- Lille Images -->
+        <figure class="slide fade">
+            <img src="Assets/Lille_1.jfif" alt="Lille">
+            <figcaption>Lille - Discovering the heart of Northern France</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Lille_2.jfif" alt="Lille">
+            <figcaption>Lille - A blend of Flemish heritage and French flair</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Lille_3.jfif" alt="Lille">
+            <figcaption>Lille - Charming streets and vibrant markets</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Lille_4.jfif" alt="Lille">
+            <figcaption>Lille - Where tradition meets contemporary spirit</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Lille_5.jfif" alt="Lille">
+            <figcaption>Lille - Unforgettable moments in this northern gem</figcaption>
+        </figure>
+
+        <!-- Marseille Images -->
+        <figure class="slide fade">
+            <img src="Assets/Marseille_1.jfif" alt="Marseille">
+            <figcaption>Marseille - Sun-soaked Mediterranean beauty</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Marseille_2.jfif" alt="Marseille">
+            <figcaption>Marseille - Ancient port city with modern vibrance</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Marseille_3.jfif" alt="Marseille">
+            <figcaption>Marseille - Coastal adventures and cultural treasures</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Marseille_4.jfif" alt="Marseille">
+            <figcaption>Marseille - Where the sea meets the soul of Provence</figcaption>
+        </figure>
+        <figure class="slide fade">
+            <img src="Assets/Marseille_5.jfif" alt="Marseille">
+            <figcaption>Marseille - Mediterranean magic at every turn</figcaption>
+        </figure>
+    </div>
+
+    <!-- Navigation buttons -->
+    <button type="button" class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button type="button" class="next" onclick="changeSlide(1)">&#10095;</button>
+
+    <!-- Dots for navigation -->
+    <div class="dots-container">
+        <button type="button" class="dot" onclick="currentSlide(1)" aria-label="Go to slide 1"></button>
+        <button type="button" class="dot" onclick="currentSlide(2)" aria-label="Go to slide 2"></button>
+        <button type="button" class="dot" onclick="currentSlide(3)" aria-label="Go to slide 3"></button>
+        <button type="button" class="dot" onclick="currentSlide(4)" aria-label="Go to slide 4"></button>
+        <button type="button" class="dot" onclick="currentSlide(5)" aria-label="Go to slide 5"></button>
+        <button type="button" class="dot" onclick="currentSlide(6)" aria-label="Go to slide 6"></button>
+        <button type="button" class="dot" onclick="currentSlide(7)" aria-label="Go to slide 7"></button>
+        <button type="button" class="dot" onclick="currentSlide(8)" aria-label="Go to slide 8"></button>
+        <button type="button" class="dot" onclick="currentSlide(9)" aria-label="Go to slide 9"></button>
+        <button type="button" class="dot" onclick="currentSlide(10)" aria-label="Go to slide 10"></button>
+        <button type="button" class="dot" onclick="currentSlide(11)" aria-label="Go to slide 11"></button>
+        <button type="button" class="dot" onclick="currentSlide(12)" aria-label="Go to slide 12"></button>
+        <button type="button" class="dot" onclick="currentSlide(13)" aria-label="Go to slide 13"></button>
+        <button type="button" class="dot" onclick="currentSlide(14)" aria-label="Go to slide 14"></button>
+        <button type="button" class="dot" onclick="currentSlide(15)" aria-label="Go to slide 15"></button>
+    </div>
+</section>
+</body>
+</html>
