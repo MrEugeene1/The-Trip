@@ -22,7 +22,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Trip</title>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/Main_Page_Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/Main_Page_Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/Main_Page_Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Assets/Main_Page_Favicon/site.webmanifest">
 </head>
 
 <body>
@@ -32,15 +35,12 @@
 </header>
 <nav>
         <ul>
-            <li><a href="">Home Page</a></li>
-            <li><select name="cities" id="cities">
-                <option value="Paris">Paris</option>
-                <option value="Lille" selected>Lille</option>
-                <option value="Marseille">Marseille</option>
-                </select>   
-            <a href="">Cities</a></li>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="Paris.html">Paris</a></li>
+            <li><a href="Lille.html">Lille</a></li>
+            <li><a href="Marseille.html">Marseille</a></li>
             <li><a href="">Gallery</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="">Subscribe Pages</a></li>
         </ul>
     </nav>
@@ -50,67 +50,67 @@
     <div class="slideshow-wrapper">
         <!-- Paris Images -->
         <figure class="slide fade">
-            <img src="Assets/Paris_1.jfif" alt="Paris">
+            <img src="Assets/Sliding_images/Paris_1.jfif" alt="Paris">
             <figcaption>Paris - The City of Light awaits with its timeless charm</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Paris_2.jfif" alt="Paris">
+            <img src="Assets/Sliding_images/Paris_2.jfif" alt="Paris">
             <figcaption>Paris - Exploring iconic landmarks and hidden cafés</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Paris_3.jfif" alt="Paris">
+            <img src="Assets/Sliding_images/Paris_3.jfif" alt="Paris">
             <figcaption>Paris - Romance and culture at every corner</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Paris_4.jfif" alt="Paris">
+            <img src="Assets/Sliding_images/Paris_4.jfif" alt="Paris">
             <figcaption>Paris - Where history meets modern elegance</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Paris_5.jfif" alt="Paris">
+            <img src="Assets/Sliding_images/Paris_5.jfif" alt="Paris">
             <figcaption>Paris - Memories made under the Parisian sky</figcaption>
         </figure>
 
         <!-- Lille Images -->
         <figure class="slide fade">
-            <img src="Assets/Lille_1.jfif" alt="Lille">
+            <img src="Assets/Sliding_images/Lille_1.jfif" alt="Lille">
             <figcaption>Lille - Discovering the heart of Northern France</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Lille_2.jfif" alt="Lille">
+            <img src="Assets/Sliding_images/Lille_2.jfif" alt="Lille">
             <figcaption>Lille - A blend of Flemish heritage and French flair</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Lille_3.jfif" alt="Lille">
+            <img src="Assets/Sliding_images/Lille_3.jfif" alt="Lille">
             <figcaption>Lille - Charming streets and vibrant markets</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Lille_4.jfif" alt="Lille">
+            <img src="Assets/Sliding_images/Lille_4.jfif" alt="Lille">
             <figcaption>Lille - Where tradition meets contemporary spirit</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Lille_5.jfif" alt="Lille">
+            <img src="Assets/Sliding_images/Lille_5.jfif" alt="Lille">
             <figcaption>Lille - Unforgettable moments in this northern gem</figcaption>
         </figure>
 
         <!-- Marseille Images -->
         <figure class="slide fade">
-            <img src="Assets/Marseille_1.jfif" alt="Marseille">
+            <img src="Assets/Sliding_images/Marseille_1.jfif" alt="Marseille">
             <figcaption>Marseille - Sun-soaked Mediterranean beauty</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Marseille_2.jfif" alt="Marseille">
+            <img src="Assets/Sliding_images/Marseille_2.jfif" alt="Marseille">
             <figcaption>Marseille - Ancient port city with modern vibrance</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Marseille_3.jfif" alt="Marseille">
+            <img src="Assets/Sliding_images/Marseille_3.jfif" alt="Marseille">
             <figcaption>Marseille - Coastal adventures and cultural treasures</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Marseille_4.jfif" alt="Marseille">
+            <img src="Assets/Sliding_images/Marseille_4.jfif" alt="Marseille">
             <figcaption>Marseille - Where the sea meets the soul of Provence</figcaption>
         </figure>
         <figure class="slide fade">
-            <img src="Assets/Marseille_5.jfif" alt="Marseille">
+            <img src="Assets/Sliding_images/Marseille_5.jfif" alt="Marseille">
             <figcaption>Marseille - Mediterranean magic at every turn</figcaption>
         </figure>
     </div>
@@ -137,6 +137,77 @@
         <button type="button" class="dot" onclick="currentSlide(14)" aria-label="Go to slide 14"></button>
         <button type="button" class="dot" onclick="currentSlide(15)" aria-label="Go to slide 15"></button>
     </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery-section">
+    <h1>Travel Gallery</h1>
+    <p>Embark on a visual journey through our unforgettable adventures across France. Each photograph captures not just a moment in time, but the emotions, discoveries, and connections that made our travels extraordinary. From the romantic streets of Paris to the vibrant culture of Marseille and the charming authenticity of Lille, let these images transport you to the heart of our experiences.</p>
+    
+    <section class="photo-gallery">
+        <ul>
+            <li>
+                <figure>
+                    <img src="Assets/Pages_images/Paris/eiffel-tower.png" alt="The Eiffel Tower illuminated at dusk" width="600">
+                    <figcaption>Standing beneath the Eiffel Tower at sunset, I watched as the iron structure transformed into gold. A street artist nearby played "La Vie en Rose" on his violin, and for that moment, Paris felt like it existed just for us.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="Assets/Pages_images/Paris/seine-river.jpg" alt="Evening reflections on the Seine River" width="600">
+                    <figcaption>An impromptu picnic along the Seine turned into one of our most cherished memories. As the sun dipped below the horizon, we shared stories, wine, and laughter with fellow travelers who quickly became friends.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="Assets/Pages_images/Paris/croissant.jpg" alt="Fresh croissants at a Parisian bakery" width="600">
+                    <figcaption>Every morning in Paris began with a pilgrimage to our favorite boulangerie. The baker remembered our names by day three, and his warm "Bonjour, mes amis!" made us feel like true Parisians.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="Assets/Pages_images/Lille/grande-place-lille.png" alt="The historic Grand Place in Lille" width="600">
+                    <figcaption>Lille's Grand Place surprised us with its stunning Flemish architecture. We spent an entire afternoon here, sketching in our travel journals while locals went about their daily routines around us.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="Assets/Pages_images/Lille/vieux-lille-courtyard.jpg" alt="A hidden courtyard in Vieux Lille" width="600">
+                    <figcaption>Lost in the cobblestone maze of Vieux Lille, we stumbled upon this secret courtyard. An elderly woman tending her flowers invited us for tea and shared stories of Lille's history that no guidebook could match.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="Assets/Pages_images/Lille/lille-waffles.jpg" alt="Traditional Belgian-style waffles in Lille" width="600">
+                    <figcaption>Our debate over whether these waffles were French or Belgian lasted longer than it took to devour them. Either way, they were perfection—crispy on the outside, fluffy within, and topped with mountains of whipped cream.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="Assets/Pages_images/Lille/citadelle-sunset.jpg" alt="Sunset at the Citadelle de Lille" width="600">
+                    <figcaption>We nearly skipped the Citadelle, thinking it would be "just another fortress." Instead, we witnessed this breathtaking sunset and understood why locals call it Lille's hidden treasure.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="Assets/Pages_images/Marseille/notre-dame-garde.jpg" alt="Notre-Dame de la Garde overlooking Marseille" width="600">
+                    <figcaption>The climb to Notre-Dame de la Garde tested our endurance, but the panoramic view of Marseille sprawling to the Mediterranean made every step worthwhile. A local told us, "She watches over all who call Marseille home," and we felt her protection too.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="Assets/Pages_images/Marseille/le-panier.jpg" alt="Colorful streets of Le Panier neighborhood" width="600">
+                    <figcaption>Le Panier's vibrant street art and winding alleys felt like walking through a living canvas. We met a muralist who invited us to add our own small contribution to a community wall—our handprints now part of Marseille forever.</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="Assets/Pages_images/Marseille/calanques-sunset.jpg" alt="Golden hour at the Calanques" width="600">
+                    <figcaption>Our kayaking adventure through the Calanques ended with this golden hour magic. Swimming in the turquoise waters as the sun painted the cliffs orange and pink, we agreed this was the definition of paradise.</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
 </section>
 </body>
 </html>
