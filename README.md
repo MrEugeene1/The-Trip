@@ -212,7 +212,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-**Your Name**
+**Eugene Oppong OKYERE**
 - 📧 Email: eookyere4@gmail.com
 - 📷 Instagram: [@mr_eugeene](https://www.instagram.com/mr_eugeene/)
 
