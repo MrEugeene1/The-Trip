@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe - The Trip</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .newsletter-section {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .newsletter-section h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .newsletter-section > p {
+            color: #666;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        form div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        form div:has(input[type="checkbox"]) {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        form div:has(input[type="checkbox"]) label {
+            margin-bottom: 0;
+            cursor: pointer;
+            font-weight: 400;
+            color: #555;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button[type="submit"]:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            .newsletter-section {
+                padding: 30px 20px;
+            }
+
+            .newsletter-section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="newsletter-section">
+        <h2>Stay Connected with Our Adventures</h2>
+        <p>Never miss a new story, travel tip, or hidden gem! Subscribe to our newsletter and join a community of fellow explorers who share a passion for discovery, culture, and unforgettable experiences.</p>
+        
+        <form action="/subscribe" method="post">
+            <div>
+                <label for="subscriber-name">Name:</label>
+                <input type="text" id="subscriber-name" name="name" placeholder="Your name" required>
+            </div>
+            
+            <div>
+                <label for="subscriber-email">Email Address:</label>
+                <input type="email" id="subscriber-email" name="email" placeholder="Enter your email address" required>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I agree to receive newsletters and updates about new travel stories and tips</label>
+            </div>
+            
+            <button type="submit">Subscribe Now</button>
+        </form>
+    </section>
+</body>
+</html>
