@@ -1,6 +1,7 @@
 # The Trip ✈️
-
 A personal travel journal website showcasing journeys through France with friends—exploring Paris, Lille, and Marseille through immersive storytelling, photography, and cultural experiences.
+
+## 🌐 Live Demo
 
 ## 🌍 Overview
 
